@@ -10,7 +10,7 @@ const ProductList = () => {
     const {data :products=[] ,refetch}=useQuery({
         queryKey :['products'],
         queryFn : async ()=> {
-          const res = await axios.get('http://localhost:5000/products')
+          const res = await axios.get(' http://localhost:5000/products')
           return res.data
         }
       })
@@ -18,7 +18,7 @@ const ProductList = () => {
       const handleProductDelete= async( id)=>{
         const toastId = toast.loading('Loading ...!!!')
          try {
-            const res = await axios.delete(`http://localhost:5000/deleteProduct/${id}`)
+            const res = await axios.delete(` http://localhost:5000/deleteProduct/${id}`)
             if(res.data.deletedCount >0){
                 toast.success("Deleted Successfully",{id:toastId})
                 refetch()

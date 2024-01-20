@@ -34,7 +34,7 @@ const ProductDetails = () => {
   const addToCart = async (addCart) => {
    
     try {
-      const res = await axios.post('http://localhost:5000/add-cart', addCart)
+      const res = await axios.post(' http://localhost:5000/add-cart', addCart)
       if (res.data.insertedId) {
         toast.success('Added Successfully')
         refetch()

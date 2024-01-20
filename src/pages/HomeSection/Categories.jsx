@@ -4,27 +4,27 @@ import { Link } from 'react-router-dom'
 const Categories = () => {
     const data = [
         {
-          cateImg: "/public/images/category/cat-1.png",
+          cateImg: "https://i.ibb.co/wz4DcQN/cat4.png",
           category: "shoes",
         },
         {
-          cateImg: "/public/images/category/cat2.png",
+          cateImg: "https://i.ibb.co/yWzhQ52/cat5.png",
           category: "monitor",
         },
         {
-          cateImg: "/public/images/category/cat3.png",
+          cateImg: "https://i.ibb.co/JH9PKFS/cat-2.webp",
           category: "watch",
         },
         {
-          cateImg: "/public/images/category/cat4.png",
+          cateImg: "https://i.ibb.co/T1KVmZD/cat11.png",
           category: "laptop",
         },
         {
-          cateImg: "/public/images/category/cat5.png",
+          cateImg: "https://i.ibb.co/yWzhQ52/cat5.png",
           category: "mobile",
         },
         {
-          cateImg: "/public/images/category/cat6.png",
+          cateImg: "https://i.ibb.co/QfqszNj/cat6.png",
           category: "music",
         },
     

@@ -44,7 +44,7 @@ const Cart = () => {
 
   const handleDeleteProduct= async(productId)=>{
      try {
-      const res = await axios.delete(`http://localhost:5000/deleteCartProduct/${productId}`)
+      const res = await axios.delete(` http://localhost:5000/deleteCartProduct/${productId}`)
       refetch()
      } catch (error) {
       
@@ -71,7 +71,7 @@ const Cart = () => {
     console.log(orderData);
 
     // try {
-    //   const res = await axios.post('http://localhost:5000/orders' , orderData)
+    //   const res = await axios.post(' http://localhost:5000/orders' , orderData)
     //   window.location.replace(res.data.url)
     //   console.log(res.data);
 
@@ -82,7 +82,7 @@ const Cart = () => {
     const stripe = await loadStripe('pk_test_51OJMNEEAoFFFruGTl9Q1hqqisATTiti8a6emYeKMUQb5h1lUacyfTktzdGwM2RNA9bajZ8lL0eHRqkoAlBI5rG8L00YQjsLSjE')
 
     try {
-      const response = await fetch("http://localhost:5000/api/create-checkout-session",{
+      const response = await fetch(" http://localhost:5000/api/create-checkout-session",{
             method:"POST",
             headers: {
               "Content-Type": "application/json",
@@ -97,8 +97,8 @@ const Cart = () => {
         });
 console.log("result",result);
         try {
-          const res = await axios.post('http://localhost:5000/order/confirm',orderData )
-          const deleteProduct = await axios.delete('http://localhost:5000/deleteAllCartProduct')
+          const res = await axios.post(' http://localhost:5000/order/confirm',orderData )
+          const deleteProduct = await axios.delete(' http://localhost:5000/deleteAllCartProduct')
         } catch (error) {
           console.log(error.message);
         }

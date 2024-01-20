@@ -39,7 +39,7 @@ const Register = () => {
             role :'member'
           }
           
-          axios.post('http://localhost:5000/users',userInfo)
+          axios.post(' http://localhost:5000/users',userInfo)
           .then((res)=>{
             if(res.data.insertedId){
               toast.success('Register successfully',{id:toastId}) 

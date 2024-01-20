@@ -14,10 +14,10 @@ const Annocument = () => {
          <section className=' py-20'>
         <div className='container mx-auto flex'>
           <div className='img' style={mystyle}>
-            <img className='w-full h-full'  src='/public/images/banner-1.png'  />
+            <img className='w-full h-full'  src='https://i.ibb.co/Jtf4ZFT/banner-1.webp'  />
           </div>
           <div className='img' style={mystyle1}>
-            <img  className='w-full h-full'  src='/public/images/banner-2.png'  />
+            <img  className='w-full h-full'  src='https://i.ibb.co/NYdQ4P9/banner-2.webp'  />
           </div>
         </div>
       </section>

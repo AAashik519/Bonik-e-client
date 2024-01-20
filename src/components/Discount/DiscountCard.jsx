@@ -1,5 +1,6 @@
 import React from "react";
 import DiscountData from "./DiscountData";
+ 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -11,6 +12,8 @@ const DiscountCard = () => {
         slidesToScroll: 1,
         autoplay: true,
       };
+
+      console.log("discount",DiscountData);
   return (
     <div>
       <div className="container mx-auto my-8">
