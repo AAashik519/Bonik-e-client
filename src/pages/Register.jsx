@@ -39,7 +39,7 @@ const Register = () => {
             role :'member'
           }
           
-          axios.post(' http://localhost:5000/users',userInfo)
+          axios.post('https://bonik-e-commerce-backend.vercel.app/users',userInfo)
           .then((res)=>{
             if(res.data.insertedId){
               toast.success('Register successfully',{id:toastId}) 

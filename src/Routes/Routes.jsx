@@ -34,7 +34,7 @@ const router = createBrowserRouter([
         {
           path:'/product/:id',
           element : <PrivateRoute><ProductDetails /></PrivateRoute>,
-          loader : ({params}) => fetch(` http://localhost:5000/products/${params.id}`)
+          loader : ({params}) => fetch(`https://bonik-e-commerce-backend.vercel.app/products/${params.id}`)
         },
         {
           path:'/addproduct',
@@ -43,7 +43,7 @@ const router = createBrowserRouter([
         {
           path:'/products/:category',
           element : <CategoryProduct />,
-          loader : async ({params})=> await fetch(` http://localhost:5000/product/${params.category}`)
+          loader : async ({params})=> await fetch(`https://bonik-e-commerce-backend.vercel.app/product/${params.category}`)
         },
         {
           path:'/contact',
@@ -88,7 +88,7 @@ const router = createBrowserRouter([
         {
           path:'/dashboard/updateProduct/:id',
           element :<UpdateProduct />,
-          loader :async ({params})=> fetch(` http://localhost:5000/products/${params.id}`)
+          loader :async ({params})=> fetch(`https://bonik-e-commerce-backend.vercel.app/products/${params.id}`)
         },
         {
           path:'/dashboard/productList',

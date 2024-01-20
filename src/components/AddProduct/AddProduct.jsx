@@ -27,7 +27,7 @@ const AddProduct = () => {
         discount:data.discount ,
         cover:res.data.data.display_url
       }
-      const menuRes= await axios.post(' http://localhost:5000/addProduct',productInfo)
+      const menuRes= await axios.post('https://bonik-e-commerce-backend.vercel.app/addProduct',productInfo)
       const toastID = toast.loading('Loading ...')
       console.log(menuRes.data);
       if(menuRes.data.insertedId){

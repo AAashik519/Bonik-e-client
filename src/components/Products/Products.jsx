@@ -11,7 +11,7 @@ const Products = () => {
   const {data :products=[]}=useQuery({
     queryKey :['products'],
     queryFn : async ()=> {
-      const res = await axios.get(' http://localhost:5000/products')
+      const res = await axios.get('https://bonik-e-commerce-backend.vercel.app/products')
       return res.data
     }
   })

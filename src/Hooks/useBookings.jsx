@@ -10,7 +10,7 @@ const useBookings = () => {
     const { data :bookings=[] , refetch } =  useQuery({
         queryKey:['booking', user?.email ],
         queryFn: async ()=>{
-         const res = await axios.get(` http://localhost:5000/add-cart?email=${user.email}`)
+         const res = await axios.get(`https://bonik-e-commerce-backend.vercel.app/add-cart?email=${user.email}`)
          return res.data
         }
     })

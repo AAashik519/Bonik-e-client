@@ -31,7 +31,7 @@ const imageHostingApi = `https://api.imgbb.com/1/upload?key=${image_hosting_Key}
         discount:data.discount ,
         cover:res.data.data.display_url
       }
-      const menuRes= await axios.put(` http://localhost:5000/updateProduct/${_id}`,productInfo)
+      const menuRes= await axios.put(`https://bonik-e-commerce-backend.vercel.app/updateProduct/${_id}`,productInfo)
       const toastID = toast.loading('Loading ...')
       console.log(menuRes.data);
       if(menuRes.data.modifiedCount >0){
@@ -72,7 +72,7 @@ const imageHostingApi = `https://api.imgbb.com/1/upload?key=${image_hosting_Key}
   //       cover :data.data.display_url
   //     }
   //     console.log(UpdateProductInfo);
-  //     axios.put(` http://localhost:5000/updateProduct/${_id}`,UpdateProductInfo)
+  //     axios.put(`https://bonik-e-commerce-backend.vercel.app/updateProduct/${_id}`,UpdateProductInfo)
   //     .then((res)=>{
   //       console.log(res.data);
   //       if(res.data.modifiedCount >0 ){
